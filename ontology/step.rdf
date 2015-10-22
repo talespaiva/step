@@ -5,43 +5,73 @@
     <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY step "http://purl.org/net/step#" >
     <!ENTITY time "http://www.w3.org/2006/time#" >
-    <!ENTITY sf "http://www.opengis.net/ont/sf#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY sf "http://www.opengis.net/ont/sf#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY qu "http://purl.oclc.org/NET/ssnx/qu/qu#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY geo "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
 
 <rdf:RDF xmlns="http://purl.org/net/step#"
      xml:base="http://purl.org/net/step"
-     xmlns:qu="http://purl.oclc.org/NET/ssnx/qu/qu#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
      xmlns:sf="http://www.opengis.net/ont/sf#"
+     xmlns:qu="http://purl.oclc.org/NET/ssnx/qu/qu#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:step="http://purl.org/net/step#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/net/step">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">0.1</owl:versionInfo>
-        <dc:author rdf:datatype="&xsd;string">Hervé Martin
-https://www.researchgate.net/profile/Herve_Martin</dc:author>
+        <rdfs:label xml:lang="en">Semantic Trajectory Episodes</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Hervé Martin
+https://www.researchgate.net/profile/Herve_Martin</dc:creator>
         <rdfs:comment rdf:datatype="&xsd;string">Please cite the following paper if you use this ontology: 
 
 T. P. Nogueira and H. Martin, &quot;Querying Semantic Trajectory Episodes&quot; in 4th ACM SIGSPATIAL International Workshop on Mobile Geographic Information Systems (MobiGIS&apos;15), 2015.</rdfs:comment>
         <terms:title rdf:datatype="&xsd;string">Semantic Trajectory Episodes</terms:title>
-        <dc:author rdf:datatype="&xsd;string">Tales P. Nogueira
-https://www.researchgate.net/profile/Tales_Nogueira</dc:author>
+        <dc:creator rdf:datatype="&xsd;string">Tales P. Nogueira
+https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
+        <dc:issued>2015-11-03</dc:issued>
+        <dc:description xml:lang="en">A lightweight ontology for representing semantic trajectories and contextual elements in terms of features of interests and episodes.</dc:description>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <owl:AnnotationProperty rdf:about="&dc;issued"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     
 
 
