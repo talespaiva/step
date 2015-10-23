@@ -4,30 +4,34 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY step "http://purl.org/net/step#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY time "http://www.w3.org/2006/time#" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY sf "http://www.opengis.net/ont/sf#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY qu "http://purl.oclc.org/NET/ssnx/qu/qu#" >
-    <!ENTITY geo "http://www.opengis.net/ont/geosparql#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY geo "http://www.opengis.net/ont/geosparql#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
 ]>
 
 
 <rdf:RDF xmlns="http://purl.org/net/step#"
      xml:base="http://purl.org/net/step"
-     xmlns:geo="http://www.opengis.net/ont/geosparql#"
-     xmlns:sf="http://www.opengis.net/ont/sf#"
      xmlns:qu="http://purl.oclc.org/NET/ssnx/qu/qu#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:step="http://purl.org/net/step#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:sf="http://www.opengis.net/ont/sf#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:step="http://purl.org/net/step#"
      xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/net/step">
         <rdfs:label xml:lang="en">Semantic Trajectory Episodes</rdfs:label>
@@ -42,6 +46,7 @@ T. P. Nogueira and H. Martin, &quot;Querying Semantic Trajectory Episodes&quot; 
 https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
         <dc:issued>2015-11-03</dc:issued>
         <dc:description xml:lang="en">A lightweight ontology for representing semantic trajectories and contextual elements in terms of features of interests and episodes.</dc:description>
+        <vann:preferredNamespacePrefix>step</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -69,9 +74,21 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="&vs;term_status"/>
     
 
 
@@ -469,6 +486,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:Class rdf:about="&step;SpatiotemporalExtent">
         <rdfs:label xml:lang="en">Spatiotemporal Extent</rdfs:label>
         <rdfs:subClassOf rdf:resource="&step;Extent"/>
+        <rdfs:comment xml:lang="en">Spatiotemporal extents are delimited by KeyPoints and the properties hasStartingPoint and hasEndingPoint. Event-like episodes may be delimited by the property hasPoint.</rdfs:comment>
     </owl:Class>
     
 
