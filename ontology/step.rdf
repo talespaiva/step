@@ -143,6 +143,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:ObjectProperty rdf:about="&step;atTime">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">atTime</rdfs:label>
+        <rdfs:comment xml:lang="en">Links the Fix or KeyPoint to a time instant.</rdfs:comment>
         <rdfs:range rdf:resource="&time;Instant"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -166,6 +167,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:ObjectProperty rdf:about="&step;hasEndingPoint">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">hasEndingPoint</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a Spatiotemporal extent to a KeyPoint that defines when and where the episode finishes.</rdfs:comment>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -176,6 +178,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasEpisode">
         <rdfs:label xml:lang="en">hasEpisode</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a Feature of Interest to its corresponding Episodes.</rdfs:comment>
         <rdfs:range rdf:resource="&step;Episode"/>
         <rdfs:domain rdf:resource="&step;FeatureOfInterest"/>
     </owl:ObjectProperty>
@@ -186,6 +189,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasExtent">
         <rdfs:label xml:lang="en">hasExtent</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an episode to an extent.</rdfs:comment>
         <rdfs:domain rdf:resource="&step;Episode"/>
         <rdfs:range rdf:resource="&step;Extent"/>
     </owl:ObjectProperty>
@@ -196,6 +200,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasFeature">
         <rdfs:label xml:lang="en">hasFeature</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a Trajectory or Contextual Element to a Feature of Interest.</rdfs:comment>
         <rdfs:range rdf:resource="&step;FeatureOfInterest"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -218,6 +223,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasFix">
         <rdfs:label xml:lang="en">hasFix</rdfs:label>
+        <rdfs:comment xml:lang="en">Links each Fix to its Raw Trajectory.</rdfs:comment>
         <rdfs:range rdf:resource="&step;Fix"/>
         <rdfs:domain rdf:resource="&step;RawTrajectory"/>
     </owl:ObjectProperty>
@@ -229,6 +235,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:ObjectProperty rdf:about="&step;hasLocation">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a Fix or a KeyPoint to a location.</rdfs:comment>
         <rdfs:range rdf:resource="&sf;Point"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -251,6 +258,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasPoint">
         <rdfs:label xml:lang="en">hasPoint</rdfs:label>
+        <rdfs:comment xml:lang="en">Links any point of the trajectory to a spatiotemporal extent.</rdfs:comment>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -262,6 +270,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:ObjectProperty rdf:about="&step;hasRawTrajectory">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">hasRawTrajectory</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a trajectory to its own raw representation.</rdfs:comment>
         <rdfs:range rdf:resource="&step;RawTrajectory"/>
         <rdfs:domain rdf:resource="&step;Trajectory"/>
     </owl:ObjectProperty>
@@ -272,6 +281,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasSemanticDescription">
         <rdfs:label xml:lang="en">hasSemanticDescription</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an episode to a description.</rdfs:comment>
         <rdfs:domain rdf:resource="&step;Episode"/>
         <rdfs:range rdf:resource="&step;SemanticDescription"/>
     </owl:ObjectProperty>
@@ -283,6 +293,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:ObjectProperty rdf:about="&step;hasStartingPoint">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">hasStartingPoint</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a Spatiotemporal extent to a KeyPoint that defines when and where the episode starts.</rdfs:comment>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -338,6 +349,8 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasValue -->
 
     <owl:DatatypeProperty rdf:about="&step;hasValue">
+        <rdfs:label>hasValue</rdfs:label>
+        <rdfs:comment xml:lang="en">Links the value to a QuantitativeValue of an Episode.</rdfs:comment>
         <rdfs:domain rdf:resource="&step;QuantitativeValue"/>
         <rdfs:range rdf:resource="&xsd;anySimpleType"/>
     </owl:DatatypeProperty>
@@ -347,7 +360,10 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.opengis.net/ont/geosparql#asWKT -->
 
     <owl:DatatypeProperty rdf:about="&geo;asWKT">
+        <rdfs:label>asWKT</rdfs:label>
+        <rdfs:comment xml:lang="en">The WKT serialization of a geometry.</rdfs:comment>
         <rdfs:isDefinedBy>http://www.opengis.net/ont/geosparql#asWKT</rdfs:isDefinedBy>
+        <rdfs:seeAlso>http://www.opengis.net/ont/geosparql#asWKT</rdfs:seeAlso>
         <rdfs:domain rdf:resource="&sf;Geometry"/>
         <rdfs:range rdf:resource="&sf;WktLiteral"/>
     </owl:DatatypeProperty>
@@ -357,7 +373,9 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.w3.org/2006/time#inXSDDateTime -->
 
     <owl:DatatypeProperty rdf:about="&time;inXSDDateTime">
+        <rdfs:comment xml:lang="en">See hhttp://www.w3.org/TR/owl-time/</rdfs:comment>
         <rdfs:isDefinedBy>http://www.w3.org/2006/time#inXSDDateTime</rdfs:isDefinedBy>
+        <rdfs:seeAlso xml:lang="en">http://www.w3.org/2006/time#inXSDDateTime</rdfs:seeAlso>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
         <rdfs:domain rdf:resource="&time;Instant"/>
     </owl:DatatypeProperty>
@@ -592,6 +610,21 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
      -->
 
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&step;Agent"/>
+            <rdf:Description rdf:about="&step;ContextualElement"/>
+            <rdf:Description rdf:about="&step;Episode"/>
+            <rdf:Description rdf:about="&step;Extent"/>
+            <rdf:Description rdf:about="&step;FeatureOfInterest"/>
+            <rdf:Description rdf:about="&step;Fix"/>
+            <rdf:Description rdf:about="&step;KeyPoint"/>
+            <rdf:Description rdf:about="&step;RawTrajectory"/>
+            <rdf:Description rdf:about="&step;SemanticDescription"/>
+            <rdf:Description rdf:about="&step;Trajectory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&step;atTime"/>
@@ -608,21 +641,6 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
             <rdf:Description rdf:about="&step;hasTrajectory"/>
             <rdf:Description rdf:about="&step;hasUnit"/>
             <rdf:Description rdf:about="&step;relatesTo"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&step;Agent"/>
-            <rdf:Description rdf:about="&step;ContextualElement"/>
-            <rdf:Description rdf:about="&step;Episode"/>
-            <rdf:Description rdf:about="&step;Extent"/>
-            <rdf:Description rdf:about="&step;FeatureOfInterest"/>
-            <rdf:Description rdf:about="&step;Fix"/>
-            <rdf:Description rdf:about="&step;KeyPoint"/>
-            <rdf:Description rdf:about="&step;RawTrajectory"/>
-            <rdf:Description rdf:about="&step;SemanticDescription"/>
-            <rdf:Description rdf:about="&step;Trajectory"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
