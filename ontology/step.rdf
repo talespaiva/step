@@ -38,7 +38,7 @@
         <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
         <dc:creator rdf:datatype="&xsd;string">Hervé Martin
 https://www.researchgate.net/profile/Herve_Martin</dc:creator>
-        <rdfs:comment rdf:datatype="&xsd;string">Please cite the following paper if you use this ontology: 
+        <rdfs:comment rdf:datatype="&xsd;string">Please cite the following paper if you use or refer to this ontology: 
 
 T. P. Nogueira and H. Martin, &quot;Querying Semantic Trajectory Episodes&quot; in 4th ACM SIGSPATIAL International Workshop on Mobile Geographic Information Systems (MobiGIS&apos;15), 2015.</rdfs:comment>
         <terms:title rdf:datatype="&xsd;string">Semantic Trajectory Episodes</terms:title>
@@ -142,6 +142,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;atTime">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">atTime</rdfs:label>
         <rdfs:range rdf:resource="&time;Instant"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -164,6 +165,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasEndingPoint">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasEndingPoint</rdfs:label>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -173,6 +175,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasEpisode -->
 
     <owl:ObjectProperty rdf:about="&step;hasEpisode">
+        <rdfs:label xml:lang="en">hasEpisode</rdfs:label>
         <rdfs:range rdf:resource="&step;Episode"/>
         <rdfs:domain rdf:resource="&step;FeatureOfInterest"/>
     </owl:ObjectProperty>
@@ -182,6 +185,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasExtent -->
 
     <owl:ObjectProperty rdf:about="&step;hasExtent">
+        <rdfs:label xml:lang="en">hasExtent</rdfs:label>
         <rdfs:domain rdf:resource="&step;Episode"/>
         <rdfs:range rdf:resource="&step;Extent"/>
     </owl:ObjectProperty>
@@ -191,6 +195,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasFeature -->
 
     <owl:ObjectProperty rdf:about="&step;hasFeature">
+        <rdfs:label xml:lang="en">hasFeature</rdfs:label>
         <rdfs:range rdf:resource="&step;FeatureOfInterest"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -212,6 +217,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasFix -->
 
     <owl:ObjectProperty rdf:about="&step;hasFix">
+        <rdfs:label xml:lang="en">hasFix</rdfs:label>
         <rdfs:range rdf:resource="&step;Fix"/>
         <rdfs:domain rdf:resource="&step;RawTrajectory"/>
     </owl:ObjectProperty>
@@ -222,6 +228,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasLocation">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
         <rdfs:range rdf:resource="&sf;Point"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -243,6 +250,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasPoint -->
 
     <owl:ObjectProperty rdf:about="&step;hasPoint">
+        <rdfs:label xml:lang="en">hasPoint</rdfs:label>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -253,6 +261,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasRawTrajectory">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasRawTrajectory</rdfs:label>
         <rdfs:range rdf:resource="&step;RawTrajectory"/>
         <rdfs:domain rdf:resource="&step;Trajectory"/>
     </owl:ObjectProperty>
@@ -262,6 +271,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#hasSemanticDescription -->
 
     <owl:ObjectProperty rdf:about="&step;hasSemanticDescription">
+        <rdfs:label xml:lang="en">hasSemanticDescription</rdfs:label>
         <rdfs:domain rdf:resource="&step;Episode"/>
         <rdfs:range rdf:resource="&step;SemanticDescription"/>
     </owl:ObjectProperty>
@@ -272,6 +282,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasStartingPoint">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasStartingPoint</rdfs:label>
         <rdfs:range rdf:resource="&step;KeyPoint"/>
         <rdfs:domain rdf:resource="&step;SpatiotemporalExtent"/>
     </owl:ObjectProperty>
@@ -282,6 +293,8 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasTrajectory">
         <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasTrajectory</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an Agent to a Trajectory.</rdfs:comment>
         <rdfs:domain rdf:resource="&step;Agent"/>
         <rdfs:range rdf:resource="&step;Trajectory"/>
     </owl:ObjectProperty>
@@ -292,6 +305,8 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:ObjectProperty rdf:about="&step;hasUnit">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasUnit</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an Unit to a Quantitative Description.</rdfs:comment>
         <rdfs:range rdf:resource="&qu;Unit"/>
         <rdfs:domain rdf:resource="&step;QuantitativeValue"/>
     </owl:ObjectProperty>
@@ -301,6 +316,8 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#relatesTo -->
 
     <owl:ObjectProperty rdf:about="&step;relatesTo">
+        <rdfs:label xml:lang="en">relatesTo</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an Episode to a ContextualElement.</rdfs:comment>
         <rdfs:range rdf:resource="&step;ContextualElement"/>
         <rdfs:domain rdf:resource="&step;Episode"/>
     </owl:ObjectProperty>
@@ -361,6 +378,8 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.oclc.org/NET/ssnx/qu/qu#Unit -->
 
     <owl:Class rdf:about="&qu;Unit">
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
+        <rdfs:comment xml:lang="en">A Unit is an abstract classifier that represents the [VIM] concept of &quot;measurement unit&quot; that is defined as &quot;real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number.&quot;</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://purl.oclc.org/NET/ssnx/qu/qu#Unit</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -369,6 +388,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#Agent -->
 
     <owl:Class rdf:about="&step;Agent">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:comment xml:lang="en">The agent is the moving object. It can be a person, an animal, a car, etc.</rdfs:comment>
     </owl:Class>
     
@@ -386,6 +406,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#Episode -->
 
     <owl:Class rdf:about="&step;Episode">
+        <rdfs:label xml:lang="en">Episode</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&step;hasSemanticDescription"/>
@@ -401,6 +422,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#Extent -->
 
     <owl:Class rdf:about="&step;Extent">
+        <rdfs:label xml:lang="en">Extent</rdfs:label>
         <rdfs:comment xml:lang="en">Extent is a superclass for all kinds of extents an Episode may have.</rdfs:comment>
     </owl:Class>
     
@@ -424,7 +446,10 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <!-- http://purl.org/net/step#Fix -->
 
-    <owl:Class rdf:about="&step;Fix"/>
+    <owl:Class rdf:about="&step;Fix">
+        <rdfs:label xml:lang="en">Fix</rdfs:label>
+        <rdfs:comment xml:lang="en">A Fix is a spatial timestamped point.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -442,6 +467,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:Class rdf:about="&step;QualitativeDescription">
         <rdfs:label xml:lang="en">Qualitative Description</rdfs:label>
         <rdfs:subClassOf rdf:resource="&step;SemanticDescription"/>
+        <rdfs:comment xml:lang="en">A Qualitative Description is used in situations when the Episode cannot be described by numeric values. This is also a point of extension of the ontology as other ontologies can be plugged here for extending it. For instance, one can define values such as &quot;slow&quot;, &quot;medium&quot;, or &quot;fast&quot; for speed episodes.</rdfs:comment>
     </owl:Class>
     
 
@@ -451,6 +477,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <owl:Class rdf:about="&step;QuantitativeValue">
         <rdfs:label xml:lang="en">Quantitative Value</rdfs:label>
         <rdfs:subClassOf rdf:resource="&step;SemanticDescription"/>
+        <rdfs:comment xml:lang="en">The value associated to the Episode. For instance, integer, decimal values. It is also associated with an Unit.</rdfs:comment>
     </owl:Class>
     
 
@@ -459,6 +486,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:Class rdf:about="&step;RawTrajectory">
         <rdfs:label xml:lang="en">Raw Trajectory</rdfs:label>
+        <rdfs:comment xml:lang="en">Represent the raw data from trajectories. As there&apos;s no official support for ensuring sequential ordering of tuples, we advise putting sequential numbers into the URLs of fixes to be able to retrieve the spatial footprint of the trajectory. Another solution is querying using an ORDER BY statement that sorts by the time:Interval of each Fix that composes the RawTrajectory.</rdfs:comment>
     </owl:Class>
     
 
@@ -467,6 +495,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
 
     <owl:Class rdf:about="&step;SemanticDescription">
         <rdfs:label xml:lang="en">Semantic Description</rdfs:label>
+        <rdfs:comment xml:lang="en">Each episode may have one or many semantic descriptions, which can be of two types: Qualitative or Quantitative.</rdfs:comment>
     </owl:Class>
     
 
@@ -504,6 +533,7 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://purl.org/net/step#Trajectory -->
 
     <owl:Class rdf:about="&step;Trajectory">
+        <rdfs:label xml:lang="en">Trajectory</rdfs:label>
         <rdfs:comment xml:lang="en">The agent&apos;s trajectory.</rdfs:comment>
     </owl:Class>
     
@@ -512,7 +542,9 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.opengis.net/ont/sf#Geometry -->
 
     <owl:Class rdf:about="&sf;Geometry">
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
         <rdfs:subClassOf rdf:resource="&step;SpatialExtent"/>
+        <rdfs:comment xml:lang="en">Geometry is the root class of the hierarchy. The instantiable subclasses of Geometry are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space (R2, R3 or R4). Geometry values in R2 have points with coordinate values for x and y. Geometry values in R3 have points with coordinate values for x, y and z or for x, y and m. Geometry values in R4 have points with coordinate values for x, y, z and m. The interpretation of the coordinates is subject to the coordinate reference systems associated to the point. All coordinates within a geometry object should be in the same coordinate reference systems. Each coordinate shall be unambiguously associated to a coordinate reference system either directly or through its containing geometry. The z coordinate of a point is typically, but not necessarily, represents altitude or elevation. The m coordinate represents a measurement. All Geometry classes described in this specification are defined so that instances of Geometry are topologically closed, i.e. all represented geometries include their boundary as point sets. This does not affect their representation, and open version of the same classes may be used in other circumstances, such as topological representations.</rdfs:comment>
         <rdfs:isDefinedBy>http://www.opengis.net/ont/sf#Geometry</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -521,7 +553,9 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.opengis.net/ont/sf#Point -->
 
     <owl:Class rdf:about="&sf;Point">
+        <rdfs:label xml:lang="en">Point</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sf;Geometry"/>
+        <rdfs:comment xml:lang="en">A Point is a 0-dimensional geometric object and represents a single location in coordinate space. A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m. The boundary of a Point is the empty set.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://www.opengis.net/ont/sf#Point</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -530,8 +564,10 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.w3.org/2006/time#Instant -->
 
     <owl:Class rdf:about="&time;Instant">
+        <rdfs:label xml:lang="en">Instant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&time;TemporalEntity"/>
         <rdfs:isDefinedBy>http://www.w3.org/2006/time#Instant</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">See http://www.w3.org/TR/owl-time/</rdfs:comment>
     </owl:Class>
     
 
@@ -539,8 +575,10 @@ https://www.researchgate.net/profile/Tales_Nogueira</dc:creator>
     <!-- http://www.w3.org/2006/time#TemporalEntity -->
 
     <owl:Class rdf:about="&time;TemporalEntity">
+        <rdfs:label xml:lang="en">Temporal Entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&step;TemporalExtent"/>
         <rdfs:isDefinedBy>http://www.w3.org/2006/time#TemporalEntity</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">See http://www.w3.org/TR/owl-time/</rdfs:comment>
     </owl:Class>
     
 
