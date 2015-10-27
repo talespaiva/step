@@ -3,7 +3,7 @@ Semantic Trajectory Episodes ontology
 
 Documentation site: http://talespaiva.github.io/step
 
-Ontology URI: http://purl.org/net/step
+Ontology URI: http://purl.org/net/step#
 
 Please cite the following paper if you use or refer to this ontology: 
 
