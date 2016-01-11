@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:vann="http://purl.org/vocab/vann/"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:sf="http://www.opengis.net/ont/sf#"
+typeof="bibo:Document"
+about="http://purl.org/net/step#"
+version="XHTML+RDFa 1.0">
+<head>
+  <title about="http://purl.org/net/step#" property="dc:title">Semantic Trajectory Episodes Ontology Specification</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <link href="css/xmlns-style.css" rel="stylesheet"  type="text/css" />
+  <link about="http://purl.org/net/step#" typeof="owl:Ontology" rel="dc:creator" href="https://www.researchgate.net/profile/Tales_Nogueira" />
+  <link about="http://purl.org/net/step#" rel="dc:creator" href="https://www.researchgate.net/profile/Herve_Martin" />
+  <link href="css/style.css" rel="stylesheet"  type="text/css" />
+  <link about="http://purl.org/net/step#" href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf" rel="alternate dcterms:hasFormat"  type="application/rdf+xml" />
+</head>
+
+<body>
+  <h1><span about="http://purl.org/net/step#" property="dc:title">Semantic Trajectory Episodes Ontology</span> <span about="http://purl.org/net/step#" property="owl:versionInfo" datatype="xsd:decimal"></span></h1>
+
+  <h2><span about="http://purl.org/net/step#" property="dc:date" content="2015-11-03T13:30:52+01:00" datatype="xsd:dateTime">3 November 2015</span></h2>
+
+		<dl about="http://purl.org/net/step#">
+			<dt>This version:</dt>
+			<dd><a rel="dc:hasVersion" 
+				rev="dc:isVersionOf" href="http://purl.org/net/step#">http://purl.org/net/step#</a> (<a href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf">OWL/RDF</a>)</dd>
+
+			<dt>Latest version:</dt>
+			<dd><a href="http://purl.org/net/step#">http://purl.org/net/step#</a> (<a href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf">OWL/RDF</a>)</dd>
+
+			<dt>Authors:</dt>
+			<dd><a rel="rdfs:seeAlso" href="https://www.researchgate.net/profile/Tales_Nogueira">Tales P. Nogueira</a> (<a rel="rdfs:seeAlso" href="http://www.liglab.fr/">Laboratoire d'Informatique de Grenoble</a>),<br/>
+				<a rel="rdfs:seeAlso" href="https://www.researchgate.net/profile/Herve_Martin">Hervé Martin</a> (<a rel="rdfs:seeAlso" href="http://www.liglab.fr/">Laboratoire d'Informatique de Grenoble</a>)</dd>
+		</dl>
+
+  <div about="http://purl.org/net/step#" rel="dc:conformsTo" resource="http://www.w3.org/TR/rdfa-syntax"></div>
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img style="border: 0; float: right; padding: 5px;"
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa"
+        alt="Valid XHTML + RDFa" height="31" width="88" /></a>
+
+  <!-- Creative Commons License -->
+   <a href="http://creativecommons.org/licenses/by/1.0/"><img alt=
+  "Creative Commons License" style="border: 0; float: right; padding: 5px;" src=
+  "http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>This work is licensed under a <a about="http://purl.org/net/step#" rel="license dc:license" href= 
+  "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution License">Creative Commons Attribution License</a>. This copyright applies to the <em>Semantic Trajectory Episodes Ontology Specification</em> and accompanying documentation in RDF. Regarding underlying technology, the <em>Semantic Trajectory Episodes Ontology Specification</em> uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+  <br />
+  <br />
+  Please cite the following paper if you use or refer to this ontology: 
+  <a href="https://www.researchgate.net/publication/283302393_Querying_Semantic_Trajectory_Episodes">T. P. Nogueira and H. Martin, "Querying Semantic Trajectory Episodes" in 4th ACM SIGSPATIAL International Workshop on Mobile Geographic Information Systems (MobiGIS'15), 2015.</a>
+  <br />
+  <hr />
+
+
+<h2 id="sec-status">Abstract</h2>
+<p about="http://purl.org/net/step#" property="dc:description">
+The <em><b>S</b>emantic <b>T</b>rajectory <b>Ep</b>isodes (STEP)</em> is a lightweight ontology for representing semantic trajectories and contextual elements in terms of features of interests and episodes.
+</p>
+
+  <div class="status">
+    <h2>Status of This Document</h2>
+
+    <p about="http://purl.org/net/step#">The template of this specification is derived from the  <a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">FOAF 
+Vocabulary Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://danbri.org/">Dan Brickley</a> and <a rel="rdfs:seeAlso" href="http://nicecupoftea.org/">Libby Miller</a>, and the <a rel="rdfs:seeAlso" href="http://purl.org/ontology/olo/core#">Ordered List Ontology</a>, which was created by <a rel="rdfs:seeAlso" href="http://www.elec.qmul.ac.uk/people/samer/">Samer A. Abdallah</a> and <a rel="rdfs:seeAlso" href="http://smiy.wordpress.com/author/zazi0815/">Bob Ferris</a>. It was modified by Tales P. Nogueira. Furthermore, a modified and extended version of <a rel="rdfs:seeAlso" href="http://svn.foaf-project.org/foaftown/specgen/">Danbri's SpecGen version</a> was used to generate most of the RDFa statements for this specification (see <a rel="rdfs:seeAlso" href="https://github.com/specgen/specgen">here</a> for SpecGen version 6 by Bob Ferris).
+</p>
+
+  <a id="sec-glance"></a>
+  <h2 id="glance">Semantic Trajectory Episodes Ontology at a glance</h2>
+  
+  <img src="https://github.com/talespaiva/step/raw/gh-pages/images/STEP.png" style="width: 100%"/>
+  
+ <p>An a-z index of <em>Semantic Trajectory Episodes Ontology</em> terms, by %concepttypes2%.</p>
+ 
+ %azlist%
+
+  <div style="clear: left;"></div>
+
+  <!-- ================================================================== -->
+
+
+<!--STATUSINFO-->
+  </div>
+
+  <h2 id="sec-crossref">Semantic Trajectory Episodes Ontology cross-reference: Listing Semantic Trajectory Episodes Ontology %concepttypes%</h2>
+
+  <p>The <em>Semantic Trajectory Episodes Ontology</em> introduces the following %concepttypes3%. There is a link at the top of this document to the RDF/XML and RDF/N3 versions.</p>
+
+<!-- the following is the script-generated list of classes and properties -->
+ 
+
+<!-- this is the a-z listing -->
+%azlist%
+
+<!-- and this is the bulk of the vocab descriptions -->
+%termlist%
+
+<h3 id="sec-ack">Acknowledgments</h3>
+
+<p>The authors would like to thank the French Ministry of Higher Education and Research (Minist` ere de l’Enseignement Supérieur et de la Recherche de la France – MESR).</p>
+
+</body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58918619-2', 'auto');
+  ga('send', 'pageview');
+</script>
+</html>
+
+
