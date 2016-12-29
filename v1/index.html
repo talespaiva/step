@@ -1,1 +1,800 @@
-test
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:vann="http://purl.org/vocab/vann/"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:sf="http://www.opengis.net/ont/sf#"
+typeof="bibo:Document"
+about="http://purl.org/net/step#"
+version="XHTML+RDFa 1.0">
+<head>
+  <title about="http://purl.org/net/step#" property="dc:title">Semantic Trajectory Episodes Ontology Specification</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <link href="css/xmlns-style.css" rel="stylesheet"  type="text/css" />
+  <link about="http://purl.org/net/step#" typeof="owl:Ontology" rel="dc:creator" href="https://www.researchgate.net/profile/Tales_Nogueira" />
+  <link about="http://purl.org/net/step#" rel="dc:creator" href="https://www.researchgate.net/profile/Herve_Martin" />
+  <link href="css/style.css" rel="stylesheet"  type="text/css" />
+  <link about="http://purl.org/net/step#" href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf" rel="alternate dcterms:hasFormat"  type="application/rdf+xml" />
+</head>
+
+<body>
+  <h1><span about="http://purl.org/net/step#" property="dc:title">Semantic Trajectory Episodes Ontology</span> <span about="http://purl.org/net/step#" property="owl:versionInfo" datatype="xsd:decimal"></span></h1>
+
+  <h2><span about="http://purl.org/net/step#" property="dc:date" content="2015-11-03T13:30:52+01:00" datatype="xsd:dateTime">3 November 2015</span></h2>
+
+		<dl about="http://purl.org/net/step#">
+			<dt>This version:</dt>
+			<dd><a rel="dc:hasVersion" 
+				rev="dc:isVersionOf" href="http://purl.org/net/step#">http://purl.org/net/step#</a> (<a href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf">OWL/RDF</a>)</dd>
+
+			<dt>Latest version:</dt>
+			<dd><a href="http://purl.org/net/step#">http://purl.org/net/step#</a> (<a href="https://github.com/talespaiva/step/raw/gh-pages/ontology/step.rdf">OWL/RDF</a>)</dd>
+
+			<dt>Authors:</dt>
+			<dd><a rel="rdfs:seeAlso" href="https://www.researchgate.net/profile/Tales_Nogueira">Tales P. Nogueira</a> (<a rel="rdfs:seeAlso" href="http://www.liglab.fr/">Laboratoire d'Informatique de Grenoble</a>),<br/>
+				<a rel="rdfs:seeAlso" href="https://www.researchgate.net/profile/Herve_Martin">Hervé Martin</a> (<a rel="rdfs:seeAlso" href="http://www.liglab.fr/">Laboratoire d'Informatique de Grenoble</a>)</dd>
+		</dl>
+
+  <div about="http://purl.org/net/step#" rel="dc:conformsTo" resource="http://www.w3.org/TR/rdfa-syntax"></div>
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img style="border: 0; float: right; padding: 5px;"
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa"
+        alt="Valid XHTML + RDFa" height="31" width="88" /></a>
+
+  <!-- Creative Commons License -->
+   <a href="http://creativecommons.org/licenses/by/1.0/"><img alt=
+  "Creative Commons License" style="border: 0; float: right; padding: 5px;" src=
+  "http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>This work is licensed under a <a about="http://purl.org/net/step#" rel="license dc:license" href= 
+  "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution License">Creative Commons Attribution License</a>. This copyright applies to the <em>Semantic Trajectory Episodes Ontology Specification</em> and accompanying documentation in RDF. Regarding underlying technology, the <em>Semantic Trajectory Episodes Ontology Specification</em> uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+  <br />
+  Please cite the following paper if you use or refer to this ontology: 
+  <a href="https://www.researchgate.net/publication/283302393_Querying_Semantic_Trajectory_Episodes" target="_blank">T. P. Nogueira and H. Martin, "Querying Semantic Trajectory Episodes" in 4th ACM SIGSPATIAL International Workshop on Mobile Geographic Information Systems (MobiGIS'15), 2015.</a>
+  <br />
+  <br />
+  <br />
+  <hr />
+
+
+<h2 id="sec-status">Abstract</h2>
+<p about="http://purl.org/net/step#" property="dc:description">
+The <em><b>S</b>emantic <b>T</b>rajectory <b>Ep</b>isodes (STEP)</em> is a lightweight ontology for representing semantic trajectories and contextual elements in terms of features of interests and episodes.
+</p>
+
+  <div class="status">
+    <h2>Status of This Document</h2>
+
+    <p about="http://purl.org/net/step#">The template of this specification is derived from the  <a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">FOAF 
+Vocabulary Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://danbri.org/">Dan Brickley</a> and <a rel="rdfs:seeAlso" href="http://nicecupoftea.org/">Libby Miller</a>, and the <a rel="rdfs:seeAlso" href="http://purl.org/ontology/olo/core#">Ordered List Ontology</a>, which was created by <a rel="rdfs:seeAlso" href="http://www.elec.qmul.ac.uk/people/samer/">Samer A. Abdallah</a> and <a rel="rdfs:seeAlso" href="http://smiy.wordpress.com/author/zazi0815/">Bob Ferris</a>. It was modified by Tales P. Nogueira. Furthermore, a modified and extended version of <a rel="rdfs:seeAlso" href="http://svn.foaf-project.org/foaftown/specgen/">Danbri's SpecGen version</a> was used to generate most of the RDFa statements for this specification (see <a rel="rdfs:seeAlso" href="https://github.com/specgen/specgen">here</a> for SpecGen version 6 by Bob Ferris).
+</p>
+
+  <a id="sec-glance"></a>
+  <h2 id="glance">Semantic Trajectory Episodes Ontology at a glance</h2>
+  
+  <img src="https://github.com/talespaiva/step/raw/gh-pages/images/STEP.png" style="width: 100%"/>
+  
+ <p>For detailed information, please refer to the <a href="https://www.researchgate.net/publication/283302393_Querying_Semantic_Trajectory_Episodes" target="_blank">paper</a>.</p>
+  
+ <p>An a-z index of <em>Semantic Trajectory Episodes Ontology</em> terms, by class (categories or types) and by property.</p>
+ 
+ <div class="azlist">
+<p>Classes: | <a href="#Agent">Agent</a> |  <a href="#ContextualElement">ContextualElement</a> |  <a href="#Episode">Episode</a> |  <a href="#Extent">Extent</a> |  <a href="#FeatureOfInterest">FeatureOfInterest</a> |  <a href="#Fix">Fix</a> |  <a href="#Geometry">Geometry</a> |  <a href="#Instant">Instant</a> |  <a href="#KeyPoint">KeyPoint</a> |  <a href="#Point">Point</a> |  <a href="#QualitativeDescription">QualitativeDescription</a> |  <a href="#QuantitativeValue">QuantitativeValue</a> |  <a href="#RawTrajectory">RawTrajectory</a> |  <a href="#SemanticDescription">SemanticDescription</a> |  <a href="#SpatialExtent">SpatialExtent</a> |  <a href="#SpatiotemporalExtent">SpatiotemporalExtent</a> |  <a href="#TemporalEntity">TemporalEntity</a> |  <a href="#TemporalExtent">TemporalExtent</a> |  <a href="#Trajectory">Trajectory</a> |  <a href="#Unit">Unit</a> | 
+</p>
+<p>Properties: | <a href="#asWKT">asWKT</a> |  <a href="#atTime">atTime</a> |  <a href="#hasEndingPoint">hasEndingPoint</a> |  <a href="#hasEpisode">hasEpisode</a> |  <a href="#hasExtent">hasExtent</a> |  <a href="#hasFeature">hasFeature</a> |  <a href="#hasFix">hasFix</a> |  <a href="#hasLocation">hasLocation</a> |  <a href="#hasPoint">hasPoint</a> |  <a href="#hasRawTrajectory">hasRawTrajectory</a> |  <a href="#hasSemanticDescription">hasSemanticDescription</a> |  <a href="#hasStartingPoint">hasStartingPoint</a> |  <a href="#hasTrajectory">hasTrajectory</a> |  <a href="#hasUnit">hasUnit</a> |  <a href="#hasValue">hasValue</a> |  <a href="#relatesTo">relatesTo</a> | 
+</p>
+</div>
+
+  <div style="clear: left;"></div>
+
+  <!-- ================================================================== -->
+
+
+<!--STATUSINFO-->
+  </div>
+
+  <h2 id="sec-crossref">Semantic Trajectory Episodes Ontology cross-reference: Listing Semantic Trajectory Episodes Ontology Classes and Properties</h2>
+
+  <p>The <em>Semantic Trajectory Episodes Ontology</em> introduces the following classes and properties. There is a link at the top of this document to the RDF/XML and RDF/N3 versions.</p>
+
+<!-- the following is the script-generated list of classes and properties -->
+ 
+
+<!-- this is the a-z listing -->
+<div class="azlist">
+<p>Classes: | <a href="#Agent">Agent</a> |  <a href="#ContextualElement">ContextualElement</a> |  <a href="#Episode">Episode</a> |  <a href="#Extent">Extent</a> |  <a href="#FeatureOfInterest">FeatureOfInterest</a> |  <a href="#Fix">Fix</a> |  <a href="#Geometry">Geometry</a> |  <a href="#Instant">Instant</a> |  <a href="#KeyPoint">KeyPoint</a> |  <a href="#Point">Point</a> |  <a href="#QualitativeDescription">QualitativeDescription</a> |  <a href="#QuantitativeValue">QuantitativeValue</a> |  <a href="#RawTrajectory">RawTrajectory</a> |  <a href="#SemanticDescription">SemanticDescription</a> |  <a href="#SpatialExtent">SpatialExtent</a> |  <a href="#SpatiotemporalExtent">SpatiotemporalExtent</a> |  <a href="#TemporalEntity">TemporalEntity</a> |  <a href="#TemporalExtent">TemporalExtent</a> |  <a href="#Trajectory">Trajectory</a> |  <a href="#Unit">Unit</a> | 
+</p>
+<p>Properties: | <a href="#asWKT">asWKT</a> |  <a href="#atTime">atTime</a> |  <a href="#hasEndingPoint">hasEndingPoint</a> |  <a href="#hasEpisode">hasEpisode</a> |  <a href="#hasExtent">hasExtent</a> |  <a href="#hasFeature">hasFeature</a> |  <a href="#hasFix">hasFix</a> |  <a href="#hasLocation">hasLocation</a> |  <a href="#hasPoint">hasPoint</a> |  <a href="#hasRawTrajectory">hasRawTrajectory</a> |  <a href="#hasSemanticDescription">hasSemanticDescription</a> |  <a href="#hasStartingPoint">hasStartingPoint</a> |  <a href="#hasTrajectory">hasTrajectory</a> |  <a href="#hasUnit">hasUnit</a> |  <a href="#hasValue">hasValue</a> |  <a href="#relatesTo">relatesTo</a> | 
+</p>
+</div>
+
+<!-- and this is the bulk of the vocab descriptions -->
+<div class="termlist"><h3>Classes and Properties (full detail)</h3>
+<div class='termdetails'><br />
+
+<h2>Classes</h2>
+ 
+
+
+<div class="specterm" id="Agent" about="http://purl.org/net/step#Agent" typeof="owl:Class">
+  			<h3>Class: step:Agent</h3> 
+  			<em property="rdfs:label" >Agent</em> - <span property="rdfs:comment" >The agent is the moving object. It can be a person, an animal, a car, etc.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasTrajectory">hasTrajectory</a>
+ </td></tr>
+  			<tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Agent">#</a>] <!-- Agent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="ContextualElement" about="http://purl.org/net/step#ContextualElement" typeof="owl:Class">
+  			<h3>Class: step:ContextualElement</h3> 
+  			<em property="rdfs:label" >Contextual Element</em> - <span property="rdfs:comment" >The contextual element can be anything related to the trajectory. It can be another agent, another trajectory, a geographic feature, etc.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#relatesTo">relatesTo</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#ContextualElement">#</a>] <!-- ContextualElement --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Episode" about="http://purl.org/net/step#Episode" typeof="owl:Class">
+  			<h3>Class: step:Episode</h3> 
+  			<em property="rdfs:label" >Episode</em> - <span property="rdfs:comment" >The episode is the smallest semantic unity for discretizing some aspect of a Feature of Interest.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasSemanticDescription">hasSemanticDescription</a>
+ <a href="#relatesTo">relatesTo</a>
+ <a href="#hasExtent">hasExtent</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasEpisode">hasEpisode</a>
+</td></tr> <tr><th class="restrictions">Restriction(s):</th>
+ <td>  <span about ="http://purl.org/net/step#Episode" rel="rdfs:subClassOf" resource="[_:N437bbf640efc45e489c4a11e39511224]"></span>
+ <span about="[_:N437bbf640efc45e489c4a11e39511224]" typeof="owl:Restriction"></span>The property 
+  									<span about="[_:N437bbf640efc45e489c4a11e39511224]" rel="owl:onProperty" href="http://purl.org/net/step#hasSemanticDescription"><a href="#hasSemanticDescription">step:hasSemanticDescription</a></span> must be set <em></em> 
+  									<span about="[_:N437bbf640efc45e489c4a11e39511224]" property="owl:onClass" datatype="xsd:nonNegativeInteger" >http://purl.org/net/step#SemanticDescription</span> time(s)   and <em></em> 
+  										<span about="[_:N437bbf640efc45e489c4a11e39511224]" property="owl:minQualifiedCardinality" >1</span> time(s)
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Episode">#</a>] <!-- Episode --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Extent" about="http://purl.org/net/step#Extent" typeof="owl:Class">
+  			<h3>Class: step:Extent</h3> 
+  			<em property="rdfs:label" >Extent</em> - <span property="rdfs:comment" >Extent is a superclass for all kinds of extents an Episode may have.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasExtent">hasExtent</a>
+</td></tr> <tr><th>Has sub class</th>
+ <td>  <a href="#SpatiotemporalExtent">Spatiotemporal Extent</a>
+ <a href="#TemporalExtent">Temporal Extent</a>
+ <a href="#SpatialExtent">Spatial Extent</a>
+ <a href="http://purl.org/net/step#SpatiotemporalExtent">step:SpatiotemporalExtent</a>
+ <a href="http://purl.org/net/step#TemporalExtent">step:TemporalExtent</a>
+ <a href="http://purl.org/net/step#SpatialExtent">step:SpatialExtent</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Extent">#</a>] <!-- Extent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="FeatureOfInterest" about="http://purl.org/net/step#FeatureOfInterest" typeof="owl:Class">
+  			<h3>Class: step:FeatureOfInterest</h3> 
+  			<em property="rdfs:label" >Feature of Interest</em> - <span property="rdfs:comment" >The aspect of the trajectory or context that is being described. Example: speed, direction, etc.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasEpisode">hasEpisode</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasFeature">hasFeature</a>
+</td></tr> <tr><th class="restrictions">Restriction(s):</th>
+ <td>  <span about ="http://purl.org/net/step#FeatureOfInterest" rel="rdfs:subClassOf" resource="[_:N2a14fa9ecf9d48bcb3c51d49496e3894]"></span>
+ <span about="[_:N2a14fa9ecf9d48bcb3c51d49496e3894]" typeof="owl:Restriction"></span>The property 
+  									<span about="[_:N2a14fa9ecf9d48bcb3c51d49496e3894]" rel="owl:onProperty" href="http://purl.org/net/step#hasEpisode"><a href="#hasEpisode">step:hasEpisode</a></span> must be set <em></em> 
+  									<span about="[_:N2a14fa9ecf9d48bcb3c51d49496e3894]" property="owl:onClass" datatype="xsd:nonNegativeInteger" >http://purl.org/net/step#Episode</span> time(s)   and <em></em> 
+  										<span about="[_:N2a14fa9ecf9d48bcb3c51d49496e3894]" property="owl:minQualifiedCardinality" >1</span> time(s)
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#FeatureOfInterest">#</a>] <!-- FeatureOfInterest --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Fix" about="http://purl.org/net/step#Fix" typeof="owl:Class">
+  			<h3>Class: step:Fix</h3> 
+  			<em property="rdfs:label" >Fix</em> - <span property="rdfs:comment" >A Fix is a spatial timestamped point.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasFix">hasFix</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Fix">#</a>] <!-- Fix --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Geometry" about="http://www.opengis.net/ont/sf#Geometry" typeof="owl:Class">
+  			<h3>Class: sf:Geometry</h3> 
+  			<em property="rdfs:label" >Geometry</em> - <span property="rdfs:comment" >Geometry is the root class of the hierarchy. The instantiable subclasses of Geometry are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space (R2, R3 or R4). Geometry values in R2 have points with coordinate values for x and y. Geometry values in R3 have points with coordinate values for x, y and z or for x, y and m. Geometry values in R4 have points with coordinate values for x, y, z and m. The interpretation of the coordinates is subject to the coordinate reference systems associated to the point. All coordinates within a geometry object should be in the same coordinate reference systems. Each coordinate shall be unambiguously associated to a coordinate reference system either directly or through its containing geometry. The z coordinate of a point is typically, but not necessarily, represents altitude or elevation. The m coordinate represents a measurement. All Geometry classes described in this specification are defined so that instances of Geometry are topologically closed, i.e. all represented geometries include their boundary as point sets. This does not affect their representation, and open version of the same classes may be used in other circumstances, such as topological representations.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#asWKT">asWKT</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#SpatialExtent"><a href="#SpatialExtent">Spatial Extent</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="#Point">Point</a>
+ <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://www.opengis.net/ont/sf#Geometry"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Geometry">#</a>] <!-- Geometry --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Instant" about="http://www.w3.org/2006/time#Instant" typeof="owl:Class">
+  			<h3>Class: time:Instant</h3> 
+  			<em property="rdfs:label" >Instant</em> - <span property="rdfs:comment" >See http://www.w3.org/TR/owl-time/</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#atTime">atTime</a>
+</td></tr> <tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.w3.org/2006/time#TemporalEntity"><a href="#TemporalEntity">Temporal Entity</a></span>
+ <span rel="rdfs:subClassOf" href="http://www.w3.org/2006/time#TemporalEntity"><a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://www.w3.org/2006/time#Instant"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Instant">#</a>] <!-- Instant --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="KeyPoint" about="http://purl.org/net/step#KeyPoint" typeof="owl:Class">
+  			<h3>Class: step:KeyPoint</h3> 
+  			<em property="rdfs:label" >Key Point</em> - <span property="rdfs:comment" >Key Points delimits the extent of SpatiotemporalExtents and can also be used to represent important points of a trajectory.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasEndingPoint">hasEndingPoint</a>
+ <a href="#hasStartingPoint">hasStartingPoint</a>
+ <a href="#hasPoint">hasPoint</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#KeyPoint">#</a>] <!-- KeyPoint --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Point" about="http://www.opengis.net/ont/sf#Point" typeof="owl:Class">
+  			<h3>Class: sf:Point</h3> 
+  			<em property="rdfs:label" >Point</em> - <span property="rdfs:comment" >A Point is a 0-dimensional geometric object and represents a single location in coordinate space. A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m. The boundary of a Point is the empty set.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasLocation">hasLocation</a>
+</td></tr> <tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.opengis.net/ont/sf#Geometry"><a href="#Geometry">Geometry</a></span>
+ <span rel="rdfs:subClassOf" href="http://www.opengis.net/ont/sf#Geometry"><a href="http://www.opengis.net/ont/sf#Geometry">sf:Geometry</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://www.opengis.net/ont/sf#Point"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Point">#</a>] <!-- Point --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="QualitativeDescription" about="http://purl.org/net/step#QualitativeDescription" typeof="owl:Class">
+  			<h3>Class: step:QualitativeDescription</h3> 
+  			<em property="rdfs:label" >Qualitative Description</em> - <span property="rdfs:comment" >A Qualitative Description is used in situations when the Episode cannot be described by numeric values. This is also a point of extension of the ontology as other ontologies can be plugged here for extending it. For instance, one can define values such as "slow", "medium", or "fast" for speed episodes.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#SemanticDescription"><a href="#SemanticDescription">Semantic Description</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#QualitativeDescription">#</a>] <!-- QualitativeDescription --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="QuantitativeValue" about="http://purl.org/net/step#QuantitativeValue" typeof="owl:Class">
+  			<h3>Class: step:QuantitativeValue</h3> 
+  			<em property="rdfs:label" >Quantitative Value</em> - <span property="rdfs:comment" >The value associated to the Episode. For instance, integer, decimal values. It is also associated with an Unit.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasValue">hasValue</a>
+ <a href="#hasUnit">hasUnit</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#SemanticDescription"><a href="#SemanticDescription">Semantic Description</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#QuantitativeValue">#</a>] <!-- QuantitativeValue --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="RawTrajectory" about="http://purl.org/net/step#RawTrajectory" typeof="owl:Class">
+  			<h3>Class: step:RawTrajectory</h3> 
+  			<em property="rdfs:label" >Raw Trajectory</em> - <span property="rdfs:comment" >Represent the raw data from trajectories. As there's no official support for ensuring sequential ordering of tuples, we advise putting sequential numbers into the URLs of fixes to be able to retrieve the spatial footprint of the trajectory. Another solution is querying using an ORDER BY statement that sorts by the time:Interval of each Fix that composes the RawTrajectory.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasFix">hasFix</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasRawTrajectory">hasRawTrajectory</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#RawTrajectory">#</a>] <!-- RawTrajectory --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="SemanticDescription" about="http://purl.org/net/step#SemanticDescription" typeof="owl:Class">
+  			<h3>Class: step:SemanticDescription</h3> 
+  			<em property="rdfs:label" >Semantic Description</em> - <span property="rdfs:comment" >Each episode may have one or many semantic descriptions, which can be of two types: Qualitative or Quantitative.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasSemanticDescription">hasSemanticDescription</a>
+</td></tr> <tr><th>Has sub class</th>
+ <td>  <a href="#QualitativeDescription">Qualitative Description</a>
+ <a href="#QuantitativeValue">Quantitative Value</a>
+ <a href="http://purl.org/net/step#QualitativeDescription">step:QualitativeDescription</a>
+ <a href="http://purl.org/net/step#QuantitativeValue">step:QuantitativeValue</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#SemanticDescription">#</a>] <!-- SemanticDescription --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="SpatialExtent" about="http://purl.org/net/step#SpatialExtent" typeof="owl:Class">
+  			<h3>Class: step:SpatialExtent</h3> 
+  			<em property="rdfs:label" >Spatial Extent</em> - <span property="rdfs:comment" >An extent determined only by spatial concepts (points, lines, polygons, etc). The usage of OGC Simple Features is a suggestion and can be exchanged by other ontologies.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#Extent"><a href="#Extent">Extent</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="#Geometry">Geometry</a>
+ <a href="http://www.opengis.net/ont/sf#Geometry">sf:Geometry</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#SpatialExtent">#</a>] <!-- SpatialExtent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="SpatiotemporalExtent" about="http://purl.org/net/step#SpatiotemporalExtent" typeof="owl:Class">
+  			<h3>Class: step:SpatiotemporalExtent</h3> 
+  			<em property="rdfs:label" >Spatiotemporal Extent</em> - <span property="rdfs:comment" >Spatiotemporal extents are delimited by KeyPoints and the properties hasStartingPoint and hasEndingPoint. Event-like episodes may be delimited by the property hasPoint.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasStartingPoint">hasStartingPoint</a>
+ <a href="#hasPoint">hasPoint</a>
+ <a href="#hasEndingPoint">hasEndingPoint</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#Extent"><a href="#Extent">Extent</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#SpatiotemporalExtent">#</a>] <!-- SpatiotemporalExtent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="TemporalEntity" about="http://www.w3.org/2006/time#TemporalEntity" typeof="owl:Class">
+  			<h3>Class: time:TemporalEntity</h3> 
+  			<em property="rdfs:label" >Temporal Entity</em> - <span property="rdfs:comment" >See http://www.w3.org/TR/owl-time/</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#TemporalExtent"><a href="#TemporalExtent">Temporal Extent</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="#Instant">Instant</a>
+ <a href="http://www.w3.org/2006/time#Instant">time:Instant</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://www.w3.org/2006/time#TemporalEntity"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#TemporalEntity">#</a>] <!-- TemporalEntity --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="TemporalExtent" about="http://purl.org/net/step#TemporalExtent" typeof="owl:Class">
+  			<h3>Class: step:TemporalExtent</h3> 
+  			<em property="rdfs:label" >Temporal Extent</em> - <span property="rdfs:comment" >An extent determined only by temporal concepts (interval, instant, etc). The usage of OWL Time is a suggestion and can be exchanged by other ontologies.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://purl.org/net/step#Extent"><a href="#Extent">Extent</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="#TemporalEntity">Temporal Entity</a>
+ <a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#TemporalExtent">#</a>] <!-- TemporalExtent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Trajectory" about="http://purl.org/net/step#Trajectory" typeof="owl:Class">
+  			<h3>Class: step:Trajectory</h3> 
+  			<em property="rdfs:label" >Trajectory</em> - <span property="rdfs:comment" >The agent's trajectory.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#hasRawTrajectory">hasRawTrajectory</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasTrajectory">hasTrajectory</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Trajectory">#</a>] <!-- Trajectory --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Unit" about="http://purl.oclc.org/NET/ssnx/qu/qu#Unit" typeof="owl:Class">
+  			<h3>Class: qu:Unit</h3> 
+  			<em property="rdfs:label" >Unit</em> - <span property="rdfs:comment" >A Unit is an abstract classifier that represents the [VIM] concept of "measurement unit" that is defined as "real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number."</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#hasUnit">hasUnit</a>
+</td></tr> 
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.oclc.org/NET/ssnx/qu/qu#Unit"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Unit">#</a>] <!-- Unit --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><h2>Properties</h2>
+ 
+
+
+<div class="specterm" id="asWKT" about="http://www.opengis.net/ont/geosparql#asWKT" typeof="owl:DatatypeProperty">
+  			<h3>Property: geo:asWKT</h3> 
+  			<em property="rdfs:label" >asWKT</em> - <span property="rdfs:comment" >The WKT serialization of a geometry.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.opengis.net/ont/sf#Geometry"><a href="#Geometry">Geometry</a></span>
+ <span rel="rdfs:domain" href="http://www.opengis.net/ont/sf#Geometry"><a href="http://www.opengis.net/ont/sf#Geometry">sf:Geometry</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.opengis.net/ont/sf#WktLiteral"><a href="http://www.opengis.net/ont/sf#WktLiteral">sf:WktLiteral</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://www.opengis.net/ont/geosparql#asWKT"></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#asWKT">#</a>] <!-- asWKT --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="atTime" about="http://purl.org/net/step#atTime" typeof="owl:FunctionalProperty">
+  			<h3>Property: step:atTime</h3> 
+  			<em property="rdfs:label" >atTime</em> - <span property="rdfs:comment" >Links the Fix or KeyPoint to a time instant.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>   <span rel="rdfs:domain" resource="[_:]"></span>
+  									<span about="[_:]" typeof="owl:Class"></span>
+  									<span about="[_:]" rel="owl:unionOf" resource="[_:]"></span>  <span about="[_:]" typeof="rdf:Description"></span>
+  									<span about="[_:]" rel="rdf:first" href=""><a href=""></a></span>
+  									<span about="[_:]" rel="rdf:rest" resource="[_:]"></span> </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2006/time#Instant"><a href="#Instant">Instant</a></span>
+ <span rel="rdfs:range" href="http://www.w3.org/2006/time#Instant"><a href="http://www.w3.org/2006/time#Instant">time:Instant</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#atTime">#</a>] <!-- atTime --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasEndingPoint" about="http://purl.org/net/step#hasEndingPoint" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasEndingPoint</h3> 
+  			<em property="rdfs:label" >hasEndingPoint</em> - <span property="rdfs:comment" >Links a Spatiotemporal extent to a KeyPoint that defines when and where the episode finishes.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#SpatiotemporalExtent"><a href="#SpatiotemporalExtent">Spatiotemporal Extent</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#KeyPoint"><a href="#KeyPoint">Key Point</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr><tr><th colspan="2">Functional Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#FunctionalProperty"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasEndingPoint">#</a>] <!-- hasEndingPoint --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasEpisode" about="http://purl.org/net/step#hasEpisode" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasEpisode</h3> 
+  			<em property="rdfs:label" >hasEpisode</em> - <span property="rdfs:comment" >Links a Feature of Interest to its corresponding Episodes.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#FeatureOfInterest"><a href="#FeatureOfInterest">Feature of Interest</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#Episode"><a href="#Episode">Episode</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasEpisode">#</a>] <!-- hasEpisode --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasExtent" about="http://purl.org/net/step#hasExtent" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasExtent</h3> 
+  			<em property="rdfs:label" >hasExtent</em> - <span property="rdfs:comment" >Links an episode to an extent.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#Episode"><a href="#Episode">Episode</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#Extent"><a href="#Extent">Extent</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasExtent">#</a>] <!-- hasExtent --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasFeature" about="http://purl.org/net/step#hasFeature" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasFeature</h3> 
+  			<em property="rdfs:label" >hasFeature</em> - <span property="rdfs:comment" >Links a Trajectory or Contextual Element to a Feature of Interest.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>   <span rel="rdfs:domain" resource="[_:]"></span>
+  									<span about="[_:]" typeof="owl:Class"></span>
+  									<span about="[_:]" rel="owl:unionOf" resource="[_:]"></span>  <span about="[_:]" typeof="rdf:Description"></span>
+  									<span about="[_:]" rel="rdf:first" href=""><a href=""></a></span>
+  									<span about="[_:]" rel="rdf:rest" resource="[_:]"></span> </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#FeatureOfInterest"><a href="#FeatureOfInterest">Feature of Interest</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasFeature">#</a>] <!-- hasFeature --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasFix" about="http://purl.org/net/step#hasFix" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasFix</h3> 
+  			<em property="rdfs:label" >hasFix</em> - <span property="rdfs:comment" >Links each Fix to its Raw Trajectory.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#RawTrajectory"><a href="#RawTrajectory">Raw Trajectory</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#Fix"><a href="#Fix">Fix</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasFix">#</a>] <!-- hasFix --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasLocation" about="http://purl.org/net/step#hasLocation" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasLocation</h3> 
+  			<em property="rdfs:label" >hasLocation</em> - <span property="rdfs:comment" >Links a Fix or a KeyPoint to a location.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>   <span rel="rdfs:domain" resource="[_:]"></span>
+  									<span about="[_:]" typeof="owl:Class"></span>
+  									<span about="[_:]" rel="owl:unionOf" resource="[_:]"></span>  <span about="[_:]" typeof="rdf:Description"></span>
+  									<span about="[_:]" rel="rdf:first" href=""><a href=""></a></span>
+  									<span about="[_:]" rel="rdf:rest" resource="[_:]"></span> </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.opengis.net/ont/sf#Point"><a href="#Point">Point</a></span>
+ <span rel="rdfs:range" href="http://www.opengis.net/ont/sf#Point"><a href="http://www.opengis.net/ont/sf#Point">sf:Point</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr><tr><th colspan="2">Functional Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#FunctionalProperty"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasLocation">#</a>] <!-- hasLocation --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasPoint" about="http://purl.org/net/step#hasPoint" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasPoint</h3> 
+  			<em property="rdfs:label" >hasPoint</em> - <span property="rdfs:comment" >Links any point of the trajectory to a spatiotemporal extent.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#SpatiotemporalExtent"><a href="#SpatiotemporalExtent">Spatiotemporal Extent</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#KeyPoint"><a href="#KeyPoint">Key Point</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasPoint">#</a>] <!-- hasPoint --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasRawTrajectory" about="http://purl.org/net/step#hasRawTrajectory" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasRawTrajectory</h3> 
+  			<em property="rdfs:label" >hasRawTrajectory</em> - <span property="rdfs:comment" >Links a trajectory to its own raw representation.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#Trajectory"><a href="#Trajectory">Trajectory</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#RawTrajectory"><a href="#RawTrajectory">Raw Trajectory</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr><tr><th colspan="2">Functional Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#FunctionalProperty"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasRawTrajectory">#</a>] <!-- hasRawTrajectory --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasSemanticDescription" about="http://purl.org/net/step#hasSemanticDescription" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasSemanticDescription</h3> 
+  			<em property="rdfs:label" >hasSemanticDescription</em> - <span property="rdfs:comment" >Links an episode to a description.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#Episode"><a href="#Episode">Episode</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#SemanticDescription"><a href="#SemanticDescription">Semantic Description</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasSemanticDescription">#</a>] <!-- hasSemanticDescription --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasStartingPoint" about="http://purl.org/net/step#hasStartingPoint" typeof="owl:FunctionalProperty">
+  			<h3>Property: step:hasStartingPoint</h3> 
+  			<em property="rdfs:label" >hasStartingPoint</em> - <span property="rdfs:comment" >Links a Spatiotemporal extent to a KeyPoint that defines when and where the episode starts.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#SpatiotemporalExtent"><a href="#SpatiotemporalExtent">Spatiotemporal Extent</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#KeyPoint"><a href="#KeyPoint">Key Point</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasStartingPoint">#</a>] <!-- hasStartingPoint --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasTrajectory" about="http://purl.org/net/step#hasTrajectory" typeof="owl:ObjectProperty">
+  			<h3>Property: step:hasTrajectory</h3> 
+  			<em property="rdfs:label" >hasTrajectory</em> - <span property="rdfs:comment" >Links an Agent to a Trajectory.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#Agent"><a href="#Agent">Agent</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#Trajectory"><a href="#Trajectory">Trajectory</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr><tr><th colspan="2">Inverse Functional Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasTrajectory">#</a>] <!-- hasTrajectory --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasUnit" about="http://purl.org/net/step#hasUnit" typeof="owl:FunctionalProperty">
+  			<h3>Property: step:hasUnit</h3> 
+  			<em property="rdfs:label" >hasUnit</em> - <span property="rdfs:comment" >Links an Unit to a Quantitative Description.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#QuantitativeValue"><a href="#QuantitativeValue">Quantitative Value</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.oclc.org/NET/ssnx/qu/qu#Unit"><a href="#Unit">Unit</a></span>
+ <span rel="rdfs:range" href="http://purl.oclc.org/NET/ssnx/qu/qu#Unit"><a href="http://purl.oclc.org/NET/ssnx/qu/qu#Unit">qu:Unit</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasUnit">#</a>] <!-- hasUnit --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="hasValue" about="http://purl.org/net/step#hasValue" typeof="owl:DatatypeProperty">
+  			<h3>Property: step:hasValue</h3> 
+  			<em property="rdfs:label" >hasValue</em> - <span property="rdfs:comment" >Links the value to a QuantitativeValue of an Episode.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#QuantitativeValue"><a href="#QuantitativeValue">Quantitative Value</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#anySimpleType"><a href="http://www.w3.org/2001/XMLSchema#anySimpleType">xsd:anySimpleType</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#hasValue">#</a>] <!-- hasValue --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="relatesTo" about="http://purl.org/net/step#relatesTo" typeof="owl:ObjectProperty">
+  			<h3>Property: step:relatesTo</h3> 
+  			<em property="rdfs:label" >relatesTo</em> - <span property="rdfs:comment" >Links an Episode to a ContextualElement.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://purl.org/net/step#Episode"><a href="#Episode">Episode</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://purl.org/net/step#ContextualElement"><a href="#ContextualElement">Contextual Element</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#relatesTo">#</a>] <!-- relatesTo --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<h3 id="sec-ack">Acknowledgments</h3>
+
+<p>The authors would like to thank the French Ministry of Higher Education and Research (Ministère de l’Enseignement Supérieur et de la Recherche de la France – MESR).</p>
+
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58918619-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
+
+
