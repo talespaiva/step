@@ -20,7 +20,7 @@
           <y:Geometry height="25.0" width="150.0" x="992.4646222222218" y="573.8003343046408"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.181640625" x="10.9091796875" y="2.3515625">FeatureOfInterest</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.716796875" x="18.1416015625" y="2.5771484375">FeatureOfInterest</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -31,7 +31,7 @@
           <y:Geometry height="25.665634674922558" width="150.0" x="510.2222869198356" y="937.2886514890602"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="141.060546875" x="4.4697265625" y="2.684379837461279">xsd:anySimpleType</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.3291015625" x="11.83544921875" y="2.909965774961279">xsd:anySimpleType</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -42,7 +42,7 @@
           <y:Geometry height="25.0" width="110.0" x="1049.7593706995958" y="1001.8160904301513"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.19921875" x="26.900390625" y="2.3515624999998863">sf:Point</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.771484375" x="29.6142578125" y="2.5771484374998863">sf:Point</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -53,7 +53,7 @@
           <y:Geometry height="25.0" width="110.0" x="1012.4646222222218" y="671.8003343046411"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.9814453125" x="25.50927734375" y="2.3515625">Episode</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.6748046875" x="27.66259765625" y="2.5771484375">Episode</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -64,7 +64,7 @@
           <y:Geometry height="25.0" width="110.0" x="1316.647528753277" y="671.8003343046411"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.595703125" x="30.2021484375" y="2.3515625">Extent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="43.689453125" x="33.1552734375" y="2.5771484375">Extent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -75,7 +75,7 @@
           <y:Geometry height="25.0" width="110.0" x="1583.535686806958" y="804.4045266331126"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0751953125" x="-3.03759765625" y="2.3515625">TemporalExtent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.90234375" x="3.548828125" y="2.5771484375">TemporalExtent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -86,7 +86,7 @@
           <y:Geometry height="25.0" width="110.0" x="1049.7593706995958" y="804.4045266331126"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.7958984375" x="6.10205078125" y="2.3515625">SpatialExtent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.66015625" x="11.669921875" y="2.5771484375">SpatialExtent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -97,7 +97,7 @@
           <y:Geometry height="25.0" width="110.0" x="1583.535686806958" y="1001.8160904301515"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.0732421875" x="10.46337890625" y="2.3515625">time:Instant</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.447265625" x="16.7763671875" y="2.5771484375">time:Instant</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -108,7 +108,7 @@
           <y:Geometry height="25.0" width="150.0" x="702.3113354950955" y="671.8003343046411"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.400390625" x="0.2998046875" y="2.3515625">SemanticDescription</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.6318359375" x="8.68408203125" y="2.5771484375">SemanticDescription</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -119,7 +119,7 @@
           <y:Geometry height="25.0" width="150.0" x="577.8139628179696" y="800.4045266331121"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.6015625" x="9.69921875" y="2.3515625">QuantitativeValue</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.7626953125" x="17.61865234375" y="2.5771484375">QuantitativeValue</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -130,7 +130,7 @@
           <y:Geometry height="25.0" width="150.0" x="789.8139628179696" y="800.4045266331121"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="160.3310546875" x="-5.16552734375" y="2.3515625">QualitativeDescription</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.58203125" x="4.708984375" y="2.5771484375">QualitativeDescription</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -141,7 +141,7 @@
           <y:Geometry height="25.0" width="110.0" x="673.1705917316586" y="937.6214688265214"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.9755859375" x="27.51220703125" y="2.3515625">qu:Unit</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="48.4404296875" x="30.77978515625" y="2.5771484375">qu:Unit</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -152,7 +152,7 @@
           <y:Geometry height="25.0" width="110.0" x="591.9553425663413" y="573.8003343046407"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.1826171875" x="17.40869140625" y="2.3515625">Trajectory</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="66.31640625" x="21.841796875" y="2.5771484375">Trajectory</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -166,7 +166,7 @@ The moving object that is subject to observation. It can be subclassed to Person
           <y:Geometry height="25.0" width="110.0" x="591.9553425663413" y="477.80033430464084"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.439453125" x="32.2802734375" y="2.3515625">Agent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.5859375" x="34.70703125" y="2.5771484375">Agent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -177,10 +177,10 @@ The moving object that is subject to observation. It can be subclassed to Person
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="149.04063467492256" width="338.37890625" x="1398.9614113548544" y="461.2960461935936"/>
+              <y:Geometry height="145.43125967492256" width="292.400390625" x="1400.9718704589395" y="462.1246934969099"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="338.37890625" x="0.0" y="0.0">Prefixes</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="292.400390625" x="0.0" y="0.0">Prefixes</y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
               <y:State closed="false" closedHeight="74.509765625" closedWidth="387.8295898437501" innerGraphDisplayEnabled="false"/>
@@ -208,7 +208,7 @@ The moving object that is subject to observation. It can be subclassed to Person
               <y:Geometry height="49.90782217492256" width="110.0" x="1418.3201254778667" y="500.70588006452067"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="118.078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="328.37890625" x="-14.358714123012305" y="-14.11295887092706">foaf: http://xmlns.com/foaf/0.1/
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="114.919921875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="282.400390625" x="-12.348255018927148" y="-13.735483442610757">foaf: http://xmlns.com/foaf/0.1/
 sf: http://www.opengis.net/ont/sf#
 time: http://www.w3.org/2006/time#
 qu: http://purl.oclc.org/NET/ssnx/qu/qu#
@@ -233,7 +233,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="150.0" x="992.4646222222218" y="525.1649245096226"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.39453125" x="5.802734375" y="2.3515625">ContextualElement</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.453125" x="13.7734375" y="2.5771484375">ContextualElement</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -244,7 +244,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="314.8108599217755" y="573.8003343046408"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.939453125" x="2.5302734375" y="2.3515625">RawTrajectory</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.3232421875" x="7.83837890625" y="2.5771484375">RawTrajectory</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -255,7 +255,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="314.8108599217755" y="669.8003343046408"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.2275390625" x="42.88623046875" y="2.3515625">Fix</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="22.744140625" x="43.6279296875" y="2.5771484375">Fix</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -266,7 +266,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="389.2030803431693" y="798.4045266331119"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.19921875" x="26.900390625" y="2.3515625">sf:Point</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.771484375" x="29.6142578125" y="2.5771484375">sf:Point</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -277,7 +277,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="234.34084371432004" y="798.4045266331119"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.0732421875" x="10.46337890625" y="2.3515625">time:Instant</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.447265625" x="16.7763671875" y="2.5771484375">time:Instant</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -288,7 +288,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.665634674922558" width="110.0" x="389.2030803431693" y="935.2886514890599"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.3955078125" x="8.80224609375" y="2.684379837461279">sf:WktLiteral</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.177734375" x="14.4111328125" y="2.909965774961279">sf:WktLiteral</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -299,7 +299,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.665634674922558" width="110.0" x="236.18387376650293" y="935.2886514890599"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.443359375" x="5.2783203125" y="2.684379837461279">xsd:dateTime</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.1162109375" x="10.94189453125" y="2.909965774961279">xsd:dateTime</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -310,7 +310,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="150.0" x="1296.647528753277" y="804.4045266331126"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="157.3095703125" x="-3.65478515625" y="2.3515625">SpatiotemporalExtent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.0185546875" x="5.99072265625" y="2.5771484375">SpatiotemporalExtent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -321,7 +321,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="1049.7593706995958" y="903.1103085316321"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.748046875" x="9.6259765625" y="2.3515625">sf:Geometry</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.2412109375" x="14.87939453125" y="2.5771484375">sf:Geometry</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -332,7 +332,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="150.0" x="1296.647528753277" y="903.1103085316321"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.3388671875" x="42.33056640625" y="2.3515625">KeyPoint</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.1162109375" x="44.94189453125" y="2.5771484375">KeyPoint</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -343,7 +343,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="150.0" x="1563.535686806958" y="903.1103085316321"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="147.6982421875" x="1.15087890625" y="2.3515625">time:TemporalEntity</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.728515625" x="10.6357421875" y="2.5771484375">time:TemporalEntity</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -356,7 +356,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="194.4272445820434" x="466.34747541741376" y="629.1331516421021"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="177.9951171875" x="8.216063697271693" y="2.3515625">hasRawTrajectory max 1</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="158.5673828125" x="17.929930884771693" y="2.5771484375">hasRawTrajectory max 1</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -366,7 +366,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="110.0" x="314.8108599217755" y="477.80033430464084"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.158203125" x="16.4208984375" y="2.3515625">foaf:Agent</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.8271484375" x="21.08642578125" y="2.5771484375">foaf:Agent</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -377,7 +377,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
           <y:Geometry height="25.0" width="168.0" x="780.8139628179696" y="477.80033430464084"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="169.67578125" x="-0.837890625" y="2.3515625">SpatiotemporalElement</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.76953125" x="9.115234375" y="2.5771484375">SpatiotemporalElement</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -388,10 +388,10 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="291.1631380420049" width="610.676745206183" x="234.34084371432004" y="1001.0874813667679"/>
+              <y:Geometry height="290.6797396045049" width="610.676745206183" x="234.34084371432004" y="1001.5708798042679"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="610.676745206183" x="0.0" y="0.0">Example of extending qualitative descriptions (not included in the ontology)</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Microsoft Sans Serif" fontSize="15" fontStyle="plain" hasLineColor="false" height="20.9775390625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="610.676745206183" x="0.0" y="0.0">Example of extending qualitative descriptions (not included in the ontology)</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -417,7 +417,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="94.0" x="325.5595213658596" y="1134.2480845621267"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="35.828125" x="29.0859375" y="2.3515625">Stop</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.7998046875" x="30.60009765625" y="2.5771484375">Stop</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -428,7 +428,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="174.0" x="379.1896104173263" y="1037.5484188667679"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="160.3310546875" x="6.83447265625" y="2.3515625">QualitativeDescription</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.58203125" x="16.708984375" y="2.5771484375">QualitativeDescription</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -439,7 +439,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="94.0" x="512.1865075211323" y="1134.2480845621267"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="41.54296875" x="26.228515625" y="2.3515625">Move</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.234375" x="27.8828125" y="2.5771484375">Move</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -450,7 +450,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="94.0" x="350.35608315432484" y="1205.976598356141"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.8916015625" x="19.05419921875" y="2.3515625">On foot</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.74609375" x="22.126953125" y="2.5771484375">On foot</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -461,7 +461,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="94.0" x="419.18961041732626" y="1252.2506194087728"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="28.1103515625" x="32.94482421875" y="2.3515625">Car</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="26.55859375" x="33.720703125" y="2.5771484375">Car</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -472,7 +472,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="94.0" x="681.1705917316586" y="1205.976598356141"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.21484375" x="29.892578125" y="2.3515625">Bike</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="31.31640625" x="31.341796875" y="2.5771484375">Bike</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -483,7 +483,7 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
               <y:Geometry height="25.0" width="118.0" x="592.6331716262389" y="1252.2506194087728"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.8173828125" x="1.59130859375" y="2.3515625">Public transport</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.26171875" x="8.369140625" y="2.5771484375">Public transport</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -496,10 +496,10 @@ rdfs: http://www.w3.org/2000/01/rdf-schema#<y:LabelModel>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="220.546875" width="714.9609375" x="1014.1670600032769" y="1066.8209319087728"/>
+              <y:Geometry height="220.095703125" width="714.9609375" x="1014.1670600032769" y="1067.2721037837728"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" borderDistance="0.0" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="714.9609375" x="0.0" y="0.0">SWRL</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" borderDistance="0.0" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="714.9609375" x="0.0" y="0.0">SWRL</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
               <y:State closed="false" closedHeight="74.509765625" closedWidth="387.8295898437501" innerGraphDisplayEnabled="false"/>
@@ -550,7 +550,7 @@ atTime(?kp2, ?t2) -&gt; hasEndingPoint(?st, ?kp2) ^ swrlb:lessThan(?t1, ?t2)</y:
           <y:Geometry height="25.0" width="224.13723268891238" x="466.3474754174137" y="713.0083500444206"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.296875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="218.3544921875" x="2.8913702507061885" y="2.3515625">hasSemanticDescription min 1</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Microsoft Sans Serif" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.845703125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.068359375" x="15.534436656956188" y="2.5771484375">hasSemanticDescription min 1</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
